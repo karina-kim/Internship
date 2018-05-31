@@ -1,0 +1,18 @@
+if (user)
+    h1 USER PAGE
+    h2 User info
+    h3 email : #{user.email ? user.email :" no email "}
+    h3 username : #{user.username ? user.username :" no username "}
+    h3 name : #{user.first_name ? user.first_name :" no first name "}
+    h3 surename : #{user.second_name ? user.second_name :" no second name "}
+    h3 company : #{user.company ? user.company :" no company "}
+    h3 work_location : #{user.work_location ? user.work_location :" no work location "}
+    h3 supervisor_name : #{user.supervisor_name ? user.supervisor_name :" no supervisor "}
+    h3 supervisor_surename : #{user.supervisor_surename ? user.supervisor_surename :"  "}
+    h3 supervisor_contact_info : #{user.supervisor_contact_info ? user.supervisor_contact_info :" "}
+    h3 start_date : #{user.start_date ? user.start_date :" no start date "}
+    h3 end_date : #{user.end_date ? user.end_date :" no end date "}
+    h3 password : #{user.password ? user.password :" no password "}
+    h3 id : #{user.idd ? user.idd :" no id  "}
+else
+    h2 no details

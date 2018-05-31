@@ -1,0 +1,8 @@
+body {
+    background-image: url("../images/about/about-hero.jpg");
+    background-size: cover ;
+    width:100%;
+    background-attachment: fixed;
+    height: 100%;
+    background-repeat: no-repeat;
+}

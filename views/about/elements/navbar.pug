@@ -1,0 +1,18 @@
+style
+    include navbar.css
+script.
+    function totop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+nav.navbar.navbar-inverse.navbar-fixed-top#nav
+    .container-fluid
+        .navbar-header
+            a.navbar-brand(onclick="totop()") InternManager
+        ul.nav.navbar-nav
+            li
+                a(href="#whyourProgram") About our program
+            li
+                a(href="#command") Command
+            li
+                a(href="#contactUs") Contact us

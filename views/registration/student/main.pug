@@ -1,0 +1,33 @@
+html
+    head
+        title!= titles
+    body
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+        h1 Registration for students
+        form(action='/register/student', method='post')
+            .form-group
+                label Email
+                input.form-control(type='email', name='email',placeholder="Email")
+            .form-group
+                label Username
+                input.form-control( name='username', placeholder="Username")
+            .form-group
+                label Name
+                input.form-control( name='first_name', placeholder="Name")
+            .form-group
+                label Surename
+                input.form-control( name='second_name', placeholder="Surename")
+            .form-group
+                label Student id
+                input.form-control( name='idd', placeholder="id")
+            .form-group
+                label Password
+                input.form-control( type="password",name='password', placeholder="password")
+            .form-group
+                label Password Confirmation
+                input.form-control( type="password",name='password2', placeholder="password")
+            button.btn.btn-success.btn-lg(type='submit') Register

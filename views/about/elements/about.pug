@@ -1,0 +1,95 @@
+link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Skranji')
+link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.12/css/all.css', integrity='sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9', crossorigin='anonymous')
+link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
+style
+    include about.css
+div(id="about")
+    #welcoming
+        h1 Welcome
+        h2 to Internship Management Program
+    hr
+    #whyourProgram
+        h1 Why Internship Management Program
+        .container.stepContainer
+            .step(style="background:url('images/about/registration.jpg'); background-size:cover")
+            p Register
+        .fas.fa-arrow-right
+        .stepContainer
+            .step(style="background:url('images/about/chooseyourprofessor.jpg'); background-size:cover")
+            p Select your professor
+        .fas.fa-arrow-right
+        .stepContainer
+            .step(style="background:url('images/about/progress.jpeg'); background-size:cover")
+            p Write your progress
+        .fas.fa-arrow-right
+        .stepContainer
+            .step(style="background:url('images/about/timePlanning.jpg'); background-size:cover")
+            p  Plan your time
+        .fas.fa-arrow-right
+        .stepContainer
+            .step(style="background:url('images/about/grade.jpg'); background-size:cover")
+            p Wait for approval
+        br
+        .fas.fa-arrow-down
+        #myCarousel.carousel.slide(data-ride='carousel')
+            // Indicators
+            ol.carousel-indicators
+                li.active(data-target='#myCarousel', data-slide-to='0')
+                li(data-target='#myCarousel', data-slide-to='1')
+                li(data-target='#myCarousel', data-slide-to='2')
+            // Wrapper for slides
+            .carousel-inner
+                .item.active
+                    img(src='images/about/carousel/work.png', alt='Work', style='width:100%;')
+                    .carousel-caption.d-none.d-md-block
+                        h1 Work on the project
+                .item
+                    img(src='images/about/carousel/deadline.jpg', alt='deadline', style='width:100%;')
+                    .carousel-caption.d-none.d-md-block
+                        h1 Forget about deadlines
+                        h1 We will recall you
+                .item
+                    .carousel-caption.d-none.d-md-block
+                        h1(style="color:black;")  Write your report when we recall
+                    img(src='images/about/carousel/report.png', alt='Report', style='width:100%;')
+            a.left.carousel-control(href='#myCarousel', data-slide='prev')
+                span.glyphicon.glyphicon-chevron-left
+                span.sr-only Previous
+            a.right.carousel-control(href='#myCarousel', data-slide='next')
+                span.glyphicon.glyphicon-chevron-right
+                span.sr-only Next
+        hr
+        #command
+            h1 Team
+            .container(style="width:65vw;height:30vw;background:rgb(256,256,256,0.1)")
+                ul.nav.nav-tabs
+                    li
+                        a(data-toggle='tab', href='#yersultan')
+                            img(src="images/about/team/Yersultan.jpg" style="border-radius:10vw;display: inline-block;width:17vw;height:17vw")
+                    li.active
+                        a(data-toggle='tab', href='#karina')
+                            img(src="images/about/team/Karina.jpg" style="border-radius:10vw;display: inline-block;width:17vw;height:17vw")
+                    li
+                        a(data-toggle='tab', href='#mona')
+                            img(src="images/about/team/Mona.jpg" style="border-radius:10vw;display: inline-block;width:17vw;height:17vw")
+                .tab-content
+                    #yersultan.tab-pane.fade
+                        h2 Yersultan Nagashtay
+                        |   Student, 3rd year
+                        br
+                        |   Faculty: SST, Computer Science
+                        br
+                        |   Position: Front-end developer
+                    #karina.tab-pane.fade.in.active
+                        h2 Karina Kim
+                        |   Student, 3rd year
+                        br
+                        |   Faculty: SST, Computer Science
+                        br
+                        |   Position: Back-end developer
+                    #mona.tab-pane.fade
+                        h3 Mona Rizvi
+                        |TODO
+        #contactUs
+            h1 Contact us
+            include  ./contact

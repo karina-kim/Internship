@@ -1,0 +1,10 @@
+style
+    include contact.css
+form(action='/contact', method='post')
+    .form-group
+        label Email
+        input.form-control(type='text', name='email',placeholder="Email" style="float:left")
+    .form-group.message
+        label Message
+        textarea.form-control( name='message', placeholder="message", style="height:85%")
+    button.btn.btn-warning.btn-lg(type='submit') Contact Us

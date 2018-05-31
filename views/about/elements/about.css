@@ -1,0 +1,70 @@
+#about{
+    position: absolute;
+    color:white;
+    top: 105px;
+    right: 0px;
+    width: 75.5%;
+    border: 3px solid green;
+    padding: 90px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#welcoming h1{
+    font-family: 'Skranji', serif;
+    font-size: 120px;
+}
+#welcoming h2{
+    font-family: 'Skranji', serif;
+    font-size: 100px;
+}
+#welcoming{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 15%;
+    padding-top: 6%;
+}
+#whyourProgram{
+    padding-top: 70px;
+    text-align: center;
+    webkit-box-align:center;
+    -webkit-box-pack:center;
+}
+#whyourProgram h1{
+    font-family: 'Skranji', serif;
+    font-size: 50px;
+    text-align: center;
+
+}
+#about .stepContainer{
+    width: 11vw;
+    height:11vw;
+    text-align: center;
+    display: inline-block;
+    table-layout: fixed;
+    border-radius: 30%;
+    vertical-align: middle;
+    font-family: Lato;
+    font-size: 20px;
+}
+#about .step{
+    display: inline-block;
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    background: red;
+    table-layout: fixed;
+    border-radius: 100%;
+
+}
+.fas.fa-arrow-right{
+    padding-top:5vw ;
+    font-size:45px;
+}
+.fas.fa-arrow-down{
+    padding-top: 10px;
+    font-size:45px;
+}
+#myCarousel img{
+    height: 40vw;
+    max-height: 40vw;
+}
